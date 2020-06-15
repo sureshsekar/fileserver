@@ -1,0 +1,527 @@
+{
+	"info": {
+		"_postman_id": "4a992120-0201-4c09-b42d-3e766759cd3d",
+		"name": "MYCOBE_FILESERVER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MYCOBE_FILESERVER",
+			"item": [
+				{
+					"name": "Base fileServer Check GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3200/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								""
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				},
+				{
+					"name": "Base fileServer Check POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3200/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								""
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				},
+				{
+					"name": "HealthCheckCall GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3200/healthCheck",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"healthCheck"
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				},
+				{
+					"name": "HealthCheckCall POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3200/healthCheck",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"healthCheck"
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				},
+				{
+					"name": "Dummy Error Call /*all",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3200/nonfunction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"nonfunction"
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				},
+				{
+					"name": "saveWOFile (NoBackup)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fileContent",
+									"value": "<html><head> <meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=utf-8\\\"> <meta name=\\\"Generator\\\" content=\\\"Microsoft Word 15 (filtered)\\\"> <style>\\n@font-face <!-- {\\n  font-family: Wingdings;\\n  panose-1: 5 0 0 0 0 0 0 0 0 0;}\\n@font-face {\\n  font-family: \\\"Cambria Math\\\";\\n  panose-1: 2 4 5 3 5 4 6 3 2 4;}\\n@font-face {\\n  font-family: Calibri;\\n  panose-1: 2 15 5 2 2 2 4 3 2 4;}\\n@font-face {\\n  font-family: Cambria;\\n  panose-1: 2 4 5 3 5 4 6 3 2 4;}\\n@font-face {\\n  font-family: \\\"Arial Narrow\\\";\\n  panose-1: 2 11 6 6 2 2 2 3 2 4;}\\n@font-face {\\n  font-family: Tahoma;\\n  panose-1: 2 11 6 4 3 5 4 4 2 4;}\\n@font-face {\\n  font-family: AdvOTa88ee647;\\n  panose-1: 0 0 0 0 0 0 0 0 0 0;}\\n--> </style>  </head>  <body lang=\\\"EN-IN\\\">\\n\\n<div class=\\\"FrontMatter\\\">\\n<p data-paraid=\\\"p1\\\" id=\\\"p1\\\" class=\\\"Abstract\\\"><b>Abstract</b></p>\\n<p data-paraid=\\\"p2\\\" id=\\\"p2\\\" class=\\\"Abstract\\\">Background: Remote extracorporeal life support (ECLS) implantation and mobile ECLS are increasingly applied to enable treatment of patients with refractory heart failure at specialized care centers. Giant left atrium (GLA) is a rare cause but may lead to acute and devastating heart failure.</p>\\n<p data-paraid=\\\"p3\\\" id=\\\"p3\\\" class=\\\"Abstract\\\">Case report: Acute heart failure that gave rise to a prolonged period of out-of-hospital cardiopulmonary resuscitation (CPR) in a patient who underwent remote ECLS implantation was found to have resulted from a GLA of impressive dimensions. There being no reasonable option for immediate surgical therapy, the patient was successfully bridged to recovery with a view to subsequent heart transplantation.</p>\\n<p data-paraid=\\\"p4\\\" id=\\\"p4\\\" class=\\\"Abstract\\\">Conclusions: The threshold to rapid institution of ECLS should be low in patients with acute, refractory heart failure including those with uncommon pathologies. Remote ECLS implantation and interhospital transfer on mobile ECLS increase the chances of survival in cases requiring treatment by specialized care centers.</p>\\n<p data-paraid=\\\"p5\\\" id=\\\"p5\\\" class=\\\"Keywords\\\">Keywords: giant left atrium; heart failure; extracorporeal life support; remote ECLS implantation; mobile ECLS</p></div>\\n\\n<div class=\\\"BodyMatter\\\">\\n<p style=\\\"margin:0cm\\\" data-paraid=\\\"p6\\\" id=\\\"p6\\\" class=\\\"Heading1\\\"><b>Introduction</b></p>\\n<p data-paraid=\\\"p7\\\" id=\\\"p7\\\" class=\\\"ParaText\\\">Giant left atrium (GLA) is commonly defined as a left atrium with a diameterÃ¢ÂÂÃ¢ÂÂ¥Ã¢ÂÂ65&nbsp;mm and found most frequently as a result of mitral valve disease. The condition may be asymptomatic or manifest itself by different symptoms including atrial fibrillation, thrombus formation and heart failure. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En1\\\" href=\\\"#En1\\\"><span style=\\\"font-family:Calibri,sans-serif\\\">[1]</span></a>][<a class=\\\"EndnoteCallout\\\" fid=\\\"En2\\\" href=\\\"#En2\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[2]</span></span></a>]</p>\\n<p data-paraid=\\\"p8\\\" id=\\\"p8\\\" class=\\\"ParaText\\\">Surgical therapy aims at reducing the size of the GLA and relies on a variety of techniques for plicating or resecting parts of the left atrium. [1] Due to the difficulty of exposing a heart with a left atrium of excessive dimensions, surgical therapy of GLA was variously reported to have required (partial) autotransplantation. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En3\\\" href=\\\"#En3\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[3]</span></span></a>][<a class=\\\"EndnoteCallout\\\" fid=\\\"En4\\\" href=\\\"#En4\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[4]</span></span></a>]</p>\\n<p data-paraid=\\\"p9\\\" id=\\\"p9\\\" class=\\\"ParaText\\\">With regard to ECLS, there is wide agreement not only on its use in patients with severe heart failure refractory to conventional therapy, but also that it should be instituted before the onset of multi-organ failure. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En5\\\" href=\\\"#En5\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[5]</span></span></a>] In patients with acute refractory heart failure or after CPR in whom diagnosis and/or neurological status are not clear or the further course of therapy is yet to be determined, ECLS may serve as a bridge to decision. Over the past decade, remote ECLS implantation and inter-hospital transfer on mobile ECLS have come to play an increasing role. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En6\\\" href=\\\"#En6\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[6]</span></span></a>]</p>\\n<p style=\\\"margin-right:0cm; margin-left:1.0cm;text-indent:-1.0cm\\\" data-paraid=\\\"p10\\\" id=\\\"p10\\\" class=\\\"Heading1\\\"><b>Case report</b></p>\\n<p data-paraid=\\\"p11\\\" id=\\\"p11\\\" class=\\\"ParaText\\\">A 57-year old male with acute heart failure was admitted to a community hospital after ROSC following cardiac arrest and <span style=\\\"color:red\\\">approx. 65&nbsp;minutes</span> of out-of-hospital CPR. <span style=\\\"color:red\\\">While his cardiac rhythm at the time of ROSC was not documented, he was in atrial fibrillation upon arrival at the community hospital.</span> It turned out that he had undergone re-do mitral valve replacement with a mechanical valve and tricuspid valve repair five years preceding the event. Nearly two decades earlier, he had undergone mitral valve replacement for mitral regurgitation in the setting of cardiomegaly. Echocardiography and computed tomography (CT) showed a grotesque case of GLA (Fig. 1 and 2) that had gone undiagnosed because the patient had not presented for follow-up examinations after the most recent surgical procedure, <span style=\\\"color:red\\\">i.e. for 5&nbsp;years. Echocardiography findings included sludge in the GLA and a left ventricular ejection fraction of 10%. Fluoroscopy showed normal motion of the mitral valve leaflets.</span></p>\\n<p data-paraid=\\\"p12\\\" id=\\\"p12\\\" class=\\\"ParaText\\\">When the patient remained in severe cardiogenic shock, our mobile ECLS team was called for ECLS implantation and subsequent air transport to enable further treatment at our tertiary care center. <span style=\\\"color:red\\\">Inflow and outflow for the ECLS system (StÃÂ¶ckert Centrifugal Pump and Centrifugal Pump Console) were instituted by percutaneous placement of a 17&nbsp;Fr NovaPort cannula in the left femoral artery and a 21&nbsp;Fr Biomedicus cannula in the left femoral vein.</span></p>\\n<p data-paraid=\\\"p13\\\" id=\\\"p13\\\" class=\\\"ParaText\\\">Both ECLS implantation and interhospital transfer were implemented without complications. In the further course, preventing thromboembolic complications while at the same time controlling an increasingly dramatic hemorrhagic tendency turned out to be a challenge. Echocardiography showed spontaneous contrast/sludge in the left atrium (Fig. 3) even though the <span style=\\\"color:red\\\">patientÃ¢ÂÂs initial INR of 3.3</span> was accompanied by moderate thrombocytopenia and his PTT was 50.2&nbsp;seconds after receiving 2000 I.U. of unfractionated heparin for ECLS implantation. Over the following two days, <span style=\\\"color:red\\\">his INR climbed to 8.9</span> and extensive spontaneous oropharyngeal, pulmonary and gastrointestinal bleeding required transfusion of several units of packed red blood cells and moderate correction of his coagulation status.</p>\\n<p data-paraid=\\\"p14\\\" id=\\\"p14\\\" class=\\\"ParaText\\\"><span style=\\\"color:red\\\">Started at 2800&nbsp;RPM</span>, the ECLS system provided sufficient blood flow <span style=\\\"color:red\\\">(of approx. 4&nbsp;L)</span> to keep up adequate perfusion. Sedation was terminated, and the patient was weaned from catecholamines within 48&nbsp;hours while his renal and hepatic functions simultaneously recovered. He woke up and turned out to be responsive though slightly delirious.</p>\\n<p data-paraid=\\\"p15\\\" id=\\\"p15\\\" class=\\\"ParaText\\\">Surgical options were evaluated but appeared little promising due to the very size of the GLA and the patientÃ¢ÂÂs risk constellation. Therefore, it was resolved to wean him from ECLS and retransfer him to the community hospital for further recovery and subsequent evaluation for heart transplantation. <span style=\\\"color:red\\\">The</span> <span style=\\\"color:red\\\">ECLS system was kept at about</span> <span style=\\\"color:red\\\">2800&nbsp;rpm for about 24&nbsp;hours and at 1900Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ2200 for another period of about 24&nbsp;hours. Then the pump speed was reduced to 1500&nbsp;rpm (1.3&nbsp;L) before the ECLS system was finally removed a few hours later.</span></p>\\n<p data-paraid=\\\"p16\\\" id=\\\"p16\\\" class=\\\"ParaText\\\">&nbsp;Early mobilization was initiated and mechanical respiration was terminated as soon as oropharyngeal and pulmonary bleeding were under control. Intravenous heparin was continued to prevent thrombus formation within the GLA, and after a total ICU stay of 6&nbsp;days, the patient was retransferred and arrived in stable condition at the community hospital. <span style=\\\"color:red\\\">At the time of retransfer, he was on i.v. unfractionated heparin (PTT 59.9&nbsp;seconds) and had an INR of 1.7.</span></p>\\n<p data-paraid=\\\"p17\\\" id=\\\"p17\\\" class=\\\"ParaText\\\">Follow-up for the present case report revealed that he had taken a fatal course due to mesenteric ischemia suspected to have been caused by thromboembolism from the GLA within a few days from arriving at the community hospital.</p>\\n<p style=\\\"margin-right:0cm; margin-left:1.0cm;text-indent:-1.0cm\\\" data-paraid=\\\"p18\\\" id=\\\"p18\\\" class=\\\"Heading1\\\"><b>Discussion</b></p>\\n<p data-paraid=\\\"p19\\\" id=\\\"p19\\\" class=\\\"ParaText\\\">The relevance of heart failure in patients with GLA was demonstrated by Kim et al. [2] who followed a cohort of 163 patients up for a median of 22&nbsp;months. 18 (11%) were admitted to hospital due to heart failure, and the fact that nearly 30% of those hospitalized for heart failure in this series took a fatal course is in keeping with the devastating character of the condition we observed in our patient.</p>\\n<p data-paraid=\\\"p20\\\" id=\\\"p20\\\" class=\\\"ParaText\\\">Mortality is moreover known to be extremely high in patients who sustained out-of-hospital cardiac arrest. Survival-to-discharge following adult out-of-hospital cardiac arrest in Europe was found to be as low as 9% by a review of 67 prospective studies [<a class=\\\"EndnoteCallout\\\" fid=\\\"En7\\\" href=\\\"#En7\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[7]</span></span></a>], while register data from the US suggested survival of 8.3% for the year 2012 [<a class=\\\"EndnoteCallout\\\" fid=\\\"En8\\\" href=\\\"#En8\\\"><span style=\\\"font-family:Calibri,sans-serif\\\">[8]</span></a>]. Given the low probability of surviving out-of-hospital cardiac arrest and the severity of our patientÃ¢ÂÂs underlying pathology, we conclude that early institution of ECLS made a relevant contribution to his initial survival and recovery.</p>\\n<p data-paraid=\\\"p21\\\" id=\\\"p21\\\" class=\\\"ParaText\\\">Simultaneously, our case illustrates the advantages of remote ECLS implantation and interhospital transfer on mobile ECLS. The benefits of pre-transfer institution of and transport on ECLS we saw in our patient are in keeping with an increasing number of reports on interhospital transfer on ECLS suggesting favorable results and demonstrating that pre-transfer ECLS implantation enables immediate improvement of cardiorespiratory parameters, prevents delays in hemodynamic stabilization and increases transport safety. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En9\\\" href=\\\"#En9\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[9]</span></span></a>][<a class=\\\"EndnoteCallout\\\" fid=\\\"En10\\\" href=\\\"#En10\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[10]</span></span></a>][<a class=\\\"EndnoteCallout\\\" fid=\\\"En11\\\" href=\\\"#En11\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[11]</span></span></a>]</p>\\n<p data-paraid=\\\"p22\\\" id=\\\"p22\\\" class=\\\"ParaText\\\">The fact that our patientÃ¢ÂÂs neurological status was unclear and, in combination with his extremely unfavorable cardiac anatomy and high risk profile, required careful evaluation of surgical therapy options addressing the GLA, on the one hand, and candidacy for heart transplantation, on the other, illustrate the notion of ECLS as a bridge to decision. The ECLS thus served not only to achieve hemodynamic stability, but also to gain time to evaluate neurological recovery, investigate medical issues and therapy options, and obtain information on questions such as social support and patient consent to further therapies.</p>\\n<p style=\\\"margin:0cm\\\" data-paraid=\\\"p23\\\" id=\\\"p23\\\" class=\\\"Heading1\\\"><b>Conclusion</b></p>\\n<p data-paraid=\\\"p24\\\" id=\\\"p24\\\" class=\\\"ParaText\\\">In summary, the fast recovery our patient made on ECLS leads us to conclude that the threshold to rapid institution of mechanical circulatory support should be low in patients with acute, refractory heart failure including those with unusual and rare pathologies. <span style=\\\"color:red\\\">We conclude that ECLS weaning should be attempted and that surgical therapy options including HTX should be carefully evaluated. Sufficient anticoagulation is mandatory.</span> The fact that follow-up revealed subsequent death from thromboembolic complications highlights the danger of thromboembolism inevitably associated with GLA.</p>\\n<p style=\\\"margin:0cm\\\" data-paraid=\\\"p25\\\" id=\\\"p25\\\" class=\\\"Heading2\\\"><b>Disclosure Statements</b></p>\\n<p data-paraid=\\\"p26\\\" id=\\\"p26\\\" class=\\\"ParaText\\\">- The authors have received no funding for the preparation of this paper.</p>\\n<p data-paraid=\\\"p27\\\" id=\\\"p27\\\" class=\\\"ParaText\\\">- The authors have no conflicts and/or competing interests to declare.</p>\\n<p data-paraid=\\\"p28\\\" id=\\\"p28\\\" class=\\\"ParaText\\\">- Written informed consent was obtained from the patientÃ¢ÂÂs relatives for publication of this case report and accompanying images. A copy of the written consent is available for review by the Editor-in-Chief of this journal.</p></div>\\n\\n<div class=\\\"BackMatter\\\">\\n\\n<div class=\\\"Reference\\\">\\n<p data-paraid=\\\"p29\\\" id=\\\"1\\\"><b>References</b></p>\\n<p data-paraid=\\\"p30\\\" id=\\\"2\\\"><b>Figure legends</b></p>\\n<p data-paraid=\\\"p31\\\" id=\\\"3\\\"><span style=\\\"background:aqua\\\">Figure 1. Transversal section of giant left atrium on initial CT after cardiac arrest and cardiopulmonary resuscitation, Dimensions: <span style=\\\"color:red\\\">240</span> mm x 176 mm</span></p>\\n<p data-paraid=\\\"p32\\\" id=\\\"4\\\">Figure 2: Frontal section of giant left atrium on initial CT</p>\\n<p data-paraid=\\\"p33\\\" id=\\\"5\\\"><span style=\\\"background:aqua\\\">Figure 3: Transversal section of giant left atrium on initial CT after cardiac arrest and cardiopulmonary resuscitation, Dimensions: <span style=\\\"color:red\\\">220</span> mm x 176 mm</span></p>\\n<p data-paraid=\\\"p34\\\" id=\\\"6\\\"><span class=\\\"Ennid\\\" id=\\\"En1\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[1]</span>] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Apostolakis E, Shuhaiber JH. The surgical management of giant left atrium. Eur J Cardiothorac Surg 2008; 33:182-190.</p>\\n<p data-paraid=\\\"p35\\\" id=\\\"7\\\"><span class=\\\"Ennid\\\" id=\\\"En2\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[2]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kim H, Park YA, Choi SM, Chung H, Kim JY, Min PK, Yoon YW, Lee BK, Hong BK, Rim SeJ, Kwon HM, Choi EY. Associates and prognosis of giant left atrium; single center experience. J Cardiovasc Ultrasound 2017;25:84-90.</p>\\n<p data-paraid=\\\"p36\\\" id=\\\"8\\\"><span class=\\\"Ennid\\\" id=\\\"En3\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[3]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pan J, Li QG, Li J, Wang DJ. Partial cardiac autotransplantation with a concomitant mitral valve, aortic valve replacement and tricuspid plasty. Interact Cardiovasc Thorac Surg 2013;17:906-907.</p>\\n<p data-paraid=\\\"p37\\\" id=\\\"9\\\"><span class=\\\"Ennid\\\" id=\\\"En4\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[4]</span>] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lessana A, Scorsin M, ScheublÃÂ© C, Raffoul R, Rescigno G. <a href=\\\"https://www.ncbi.nlm.nih.gov/pubmed/10320275\\\">Effective reduction of a giant left atrium by partial autotransplantation.</a> Ann Thorac Surg 1999;67:1164-1165.</p>\\n<p data-paraid=\\\"p38\\\" id=\\\"10\\\"><span class=\\\"Ennid\\\" id=\\\"En5\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[5]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Beckmann A, Benk C, Beyersdorf F, Haimerl G, Merkle F, Mestres C, Pepper J. Wahba A. Position article for the use of extracorporeal life support in adult patients. Eur J Cardiothorac Surg 2011;40:676-681.</p>\\n<p data-paraid=\\\"p39\\\" id=\\\"11\\\"><span class=\\\"Ennid\\\" id=\\\"En6\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[6]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Guenther SPW, Buchholz S, Born F, Brunner S, Schramm R, Hoechter DJ, von Dossow V, Pichlmaier M, Hagl C, Khaladj N. Remote ECLS-implantation and transport for retrieval of cardiogenic shock patients. &nbsp;</p>\\n<p data-paraid=\\\"p40\\\" id=\\\"12\\\"><span class=\\\"Ennid\\\" id=\\\"En7\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[7]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berdowski J, Berg RA, Tijssen JGP, Koster RW. Global incidences of out-of-hospital cardiac arrest and survival rates: systematic review of 67 prospective studies. Resuscitation 2010;81:1479-1487.</p>\\n<p data-paraid=\\\"p41\\\" id=\\\"13\\\"><span class=\\\"Ennid\\\" id=\\\"En8\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[8]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chan PS, McNally B, Tang F, Kellermann A, CARES Surveillance Group. Recent trends in survival from out-of-hospital cardiac arrest in the United States. Circulation 2014;130:1876-1882.</p>\\n<p data-paraid=\\\"p42\\\" id=\\\"14\\\"><span class=\\\"Ennid\\\" id=\\\"En9\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[9]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Schopka S, Philipp A, Hilker M, MÃÂ¼ller T, Zimmermann M, Arlt M, Rupprecht L, Schmid C, Lunz D. Clinical course and long-term outcome following venoarterial extracorporeal life support-facilitated interhospital transfer of patients with circulatory failure. Resuscitation 2015;93:53-57.</p>\\n<p data-paraid=\\\"p43\\\" id=\\\"15\\\"><span class=\\\"Ennid\\\" id=\\\"En10\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[10]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Javidfar J, Brodie D, Takayama H, Mongero L, Zwischenberger J, Sonett J, Bacchetta M. Safe transport of critically ill adult patients on extracorporeal membrane oxygenation support to a regional extracorporeal membrane oxygenation center. ASAIO J 20122;57:421-425.</p>\\n<p data-paraid=\\\"p44\\\" id=\\\"16\\\"><span class=\\\"Ennid\\\" id=\\\"En11\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[11]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Formica F, Avalli L, Redaelli G, Paolini G. Interhospital stabilization of adult patients with refractory cardiogenic shock by veno-arterial extracorporeal membrane oxygenation. Int J Cardiol 2011;147:164-165.</p></div></div><script class=\\\"jsdom\\\" src=\\\"http://code.jquery.com/jquery.js\\\"></script><script class=\\\"jsdom\\\" src=\\\"http://code.jquery.com/jquery.js\\\"></script><script class=\\\"jsdom\\\" src=\\\"http://code.jquery.com/jquery.js\\\"></script></body></html>\n",
+									"type": "text"
+								},
+								{
+									"key": "projectName",
+									"value": "D2H_AQ_10",
+									"type": "text"
+								},
+								{
+									"key": "subProjectName",
+									"value": "PEERJK",
+									"type": "text"
+								},
+								{
+									"key": "workObjectID",
+									"value": "D2_NEW_FIL_23",
+									"type": "text"
+								},
+								{
+									"key": "fileName",
+									"value": "D2_NEW_FIL_23.html",
+									"type": "text"
+								},
+								{
+									"key": "fileType",
+									"value": "other",
+									"type": "text"
+								},
+								{
+									"key": "backupFlag",
+									"value": "true",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "processName",
+									"value": "HTMLCleanup",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3200/saveWOFile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"saveWOFile"
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				},
+				{
+					"name": "saveWOFile (with BackupFlag true)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fileContent",
+									"value": "<html><head> <meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=utf-8\\\"> <meta name=\\\"Generator\\\" content=\\\"Microsoft Word 15 (filtered)\\\"> <style>\\n@font-face <!-- {\\n  font-family: Wingdings;\\n  panose-1: 5 0 0 0 0 0 0 0 0 0;}\\n@font-face {\\n  font-family: \\\"Cambria Math\\\";\\n  panose-1: 2 4 5 3 5 4 6 3 2 4;}\\n@font-face {\\n  font-family: Calibri;\\n  panose-1: 2 15 5 2 2 2 4 3 2 4;}\\n@font-face {\\n  font-family: Cambria;\\n  panose-1: 2 4 5 3 5 4 6 3 2 4;}\\n@font-face {\\n  font-family: \\\"Arial Narrow\\\";\\n  panose-1: 2 11 6 6 2 2 2 3 2 4;}\\n@font-face {\\n  font-family: Tahoma;\\n  panose-1: 2 11 6 4 3 5 4 4 2 4;}\\n@font-face {\\n  font-family: AdvOTa88ee647;\\n  panose-1: 0 0 0 0 0 0 0 0 0 0;}\\n--> </style>  </head>  <body lang=\\\"EN-IN\\\">\\n\\n<div class=\\\"FrontMatter\\\">\\n<p data-paraid=\\\"p1\\\" id=\\\"p1\\\" class=\\\"Abstract\\\"><b>Abstract</b></p>\\n<p data-paraid=\\\"p2\\\" id=\\\"p2\\\" class=\\\"Abstract\\\">Background: Remote extracorporeal life support (ECLS) implantation and mobile ECLS are increasingly applied to enable treatment of patients with refractory heart failure at specialized care centers. Giant left atrium (GLA) is a rare cause but may lead to acute and devastating heart failure.</p>\\n<p data-paraid=\\\"p3\\\" id=\\\"p3\\\" class=\\\"Abstract\\\">Case report: Acute heart failure that gave rise to a prolonged period of out-of-hospital cardiopulmonary resuscitation (CPR) in a patient who underwent remote ECLS implantation was found to have resulted from a GLA of impressive dimensions. There being no reasonable option for immediate surgical therapy, the patient was successfully bridged to recovery with a view to subsequent heart transplantation.</p>\\n<p data-paraid=\\\"p4\\\" id=\\\"p4\\\" class=\\\"Abstract\\\">Conclusions: The threshold to rapid institution of ECLS should be low in patients with acute, refractory heart failure including those with uncommon pathologies. Remote ECLS implantation and interhospital transfer on mobile ECLS increase the chances of survival in cases requiring treatment by specialized care centers.</p>\\n<p data-paraid=\\\"p5\\\" id=\\\"p5\\\" class=\\\"Keywords\\\">Keywords: giant left atrium; heart failure; extracorporeal life support; remote ECLS implantation; mobile ECLS</p></div>\\n\\n<div class=\\\"BodyMatter\\\">\\n<p style=\\\"margin:0cm\\\" data-paraid=\\\"p6\\\" id=\\\"p6\\\" class=\\\"Heading1\\\"><b>Introduction</b></p>\\n<p data-paraid=\\\"p7\\\" id=\\\"p7\\\" class=\\\"ParaText\\\">Giant left atrium (GLA) is commonly defined as a left atrium with a diameterÃ¢ÂÂÃ¢ÂÂ¥Ã¢ÂÂ65&nbsp;mm and found most frequently as a result of mitral valve disease. The condition may be asymptomatic or manifest itself by different symptoms including atrial fibrillation, thrombus formation and heart failure. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En1\\\" href=\\\"#En1\\\"><span style=\\\"font-family:Calibri,sans-serif\\\">[1]</span></a>][<a class=\\\"EndnoteCallout\\\" fid=\\\"En2\\\" href=\\\"#En2\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[2]</span></span></a>]</p>\\n<p data-paraid=\\\"p8\\\" id=\\\"p8\\\" class=\\\"ParaText\\\">Surgical therapy aims at reducing the size of the GLA and relies on a variety of techniques for plicating or resecting parts of the left atrium. [1] Due to the difficulty of exposing a heart with a left atrium of excessive dimensions, surgical therapy of GLA was variously reported to have required (partial) autotransplantation. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En3\\\" href=\\\"#En3\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[3]</span></span></a>][<a class=\\\"EndnoteCallout\\\" fid=\\\"En4\\\" href=\\\"#En4\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[4]</span></span></a>]</p>\\n<p data-paraid=\\\"p9\\\" id=\\\"p9\\\" class=\\\"ParaText\\\">With regard to ECLS, there is wide agreement not only on its use in patients with severe heart failure refractory to conventional therapy, but also that it should be instituted before the onset of multi-organ failure. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En5\\\" href=\\\"#En5\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[5]</span></span></a>] In patients with acute refractory heart failure or after CPR in whom diagnosis and/or neurological status are not clear or the further course of therapy is yet to be determined, ECLS may serve as a bridge to decision. Over the past decade, remote ECLS implantation and inter-hospital transfer on mobile ECLS have come to play an increasing role. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En6\\\" href=\\\"#En6\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[6]</span></span></a>]</p>\\n<p style=\\\"margin-right:0cm; margin-left:1.0cm;text-indent:-1.0cm\\\" data-paraid=\\\"p10\\\" id=\\\"p10\\\" class=\\\"Heading1\\\"><b>Case report</b></p>\\n<p data-paraid=\\\"p11\\\" id=\\\"p11\\\" class=\\\"ParaText\\\">A 57-year old male with acute heart failure was admitted to a community hospital after ROSC following cardiac arrest and <span style=\\\"color:red\\\">approx. 65&nbsp;minutes</span> of out-of-hospital CPR. <span style=\\\"color:red\\\">While his cardiac rhythm at the time of ROSC was not documented, he was in atrial fibrillation upon arrival at the community hospital.</span> It turned out that he had undergone re-do mitral valve replacement with a mechanical valve and tricuspid valve repair five years preceding the event. Nearly two decades earlier, he had undergone mitral valve replacement for mitral regurgitation in the setting of cardiomegaly. Echocardiography and computed tomography (CT) showed a grotesque case of GLA (Fig. 1 and 2) that had gone undiagnosed because the patient had not presented for follow-up examinations after the most recent surgical procedure, <span style=\\\"color:red\\\">i.e. for 5&nbsp;years. Echocardiography findings included sludge in the GLA and a left ventricular ejection fraction of 10%. Fluoroscopy showed normal motion of the mitral valve leaflets.</span></p>\\n<p data-paraid=\\\"p12\\\" id=\\\"p12\\\" class=\\\"ParaText\\\">When the patient remained in severe cardiogenic shock, our mobile ECLS team was called for ECLS implantation and subsequent air transport to enable further treatment at our tertiary care center. <span style=\\\"color:red\\\">Inflow and outflow for the ECLS system (StÃÂ¶ckert Centrifugal Pump and Centrifugal Pump Console) were instituted by percutaneous placement of a 17&nbsp;Fr NovaPort cannula in the left femoral artery and a 21&nbsp;Fr Biomedicus cannula in the left femoral vein.</span></p>\\n<p data-paraid=\\\"p13\\\" id=\\\"p13\\\" class=\\\"ParaText\\\">Both ECLS implantation and interhospital transfer were implemented without complications. In the further course, preventing thromboembolic complications while at the same time controlling an increasingly dramatic hemorrhagic tendency turned out to be a challenge. Echocardiography showed spontaneous contrast/sludge in the left atrium (Fig. 3) even though the <span style=\\\"color:red\\\">patientÃ¢ÂÂs initial INR of 3.3</span> was accompanied by moderate thrombocytopenia and his PTT was 50.2&nbsp;seconds after receiving 2000 I.U. of unfractionated heparin for ECLS implantation. Over the following two days, <span style=\\\"color:red\\\">his INR climbed to 8.9</span> and extensive spontaneous oropharyngeal, pulmonary and gastrointestinal bleeding required transfusion of several units of packed red blood cells and moderate correction of his coagulation status.</p>\\n<p data-paraid=\\\"p14\\\" id=\\\"p14\\\" class=\\\"ParaText\\\"><span style=\\\"color:red\\\">Started at 2800&nbsp;RPM</span>, the ECLS system provided sufficient blood flow <span style=\\\"color:red\\\">(of approx. 4&nbsp;L)</span> to keep up adequate perfusion. Sedation was terminated, and the patient was weaned from catecholamines within 48&nbsp;hours while his renal and hepatic functions simultaneously recovered. He woke up and turned out to be responsive though slightly delirious.</p>\\n<p data-paraid=\\\"p15\\\" id=\\\"p15\\\" class=\\\"ParaText\\\">Surgical options were evaluated but appeared little promising due to the very size of the GLA and the patientÃ¢ÂÂs risk constellation. Therefore, it was resolved to wean him from ECLS and retransfer him to the community hospital for further recovery and subsequent evaluation for heart transplantation. <span style=\\\"color:red\\\">The</span> <span style=\\\"color:red\\\">ECLS system was kept at about</span> <span style=\\\"color:red\\\">2800&nbsp;rpm for about 24&nbsp;hours and at 1900Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ2200 for another period of about 24&nbsp;hours. Then the pump speed was reduced to 1500&nbsp;rpm (1.3&nbsp;L) before the ECLS system was finally removed a few hours later.</span></p>\\n<p data-paraid=\\\"p16\\\" id=\\\"p16\\\" class=\\\"ParaText\\\">&nbsp;Early mobilization was initiated and mechanical respiration was terminated as soon as oropharyngeal and pulmonary bleeding were under control. Intravenous heparin was continued to prevent thrombus formation within the GLA, and after a total ICU stay of 6&nbsp;days, the patient was retransferred and arrived in stable condition at the community hospital. <span style=\\\"color:red\\\">At the time of retransfer, he was on i.v. unfractionated heparin (PTT 59.9&nbsp;seconds) and had an INR of 1.7.</span></p>\\n<p data-paraid=\\\"p17\\\" id=\\\"p17\\\" class=\\\"ParaText\\\">Follow-up for the present case report revealed that he had taken a fatal course due to mesenteric ischemia suspected to have been caused by thromboembolism from the GLA within a few days from arriving at the community hospital.</p>\\n<p style=\\\"margin-right:0cm; margin-left:1.0cm;text-indent:-1.0cm\\\" data-paraid=\\\"p18\\\" id=\\\"p18\\\" class=\\\"Heading1\\\"><b>Discussion</b></p>\\n<p data-paraid=\\\"p19\\\" id=\\\"p19\\\" class=\\\"ParaText\\\">The relevance of heart failure in patients with GLA was demonstrated by Kim et al. [2] who followed a cohort of 163 patients up for a median of 22&nbsp;months. 18 (11%) were admitted to hospital due to heart failure, and the fact that nearly 30% of those hospitalized for heart failure in this series took a fatal course is in keeping with the devastating character of the condition we observed in our patient.</p>\\n<p data-paraid=\\\"p20\\\" id=\\\"p20\\\" class=\\\"ParaText\\\">Mortality is moreover known to be extremely high in patients who sustained out-of-hospital cardiac arrest. Survival-to-discharge following adult out-of-hospital cardiac arrest in Europe was found to be as low as 9% by a review of 67 prospective studies [<a class=\\\"EndnoteCallout\\\" fid=\\\"En7\\\" href=\\\"#En7\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[7]</span></span></a>], while register data from the US suggested survival of 8.3% for the year 2012 [<a class=\\\"EndnoteCallout\\\" fid=\\\"En8\\\" href=\\\"#En8\\\"><span style=\\\"font-family:Calibri,sans-serif\\\">[8]</span></a>]. Given the low probability of surviving out-of-hospital cardiac arrest and the severity of our patientÃ¢ÂÂs underlying pathology, we conclude that early institution of ECLS made a relevant contribution to his initial survival and recovery.</p>\\n<p data-paraid=\\\"p21\\\" id=\\\"p21\\\" class=\\\"ParaText\\\">Simultaneously, our case illustrates the advantages of remote ECLS implantation and interhospital transfer on mobile ECLS. The benefits of pre-transfer institution of and transport on ECLS we saw in our patient are in keeping with an increasing number of reports on interhospital transfer on ECLS suggesting favorable results and demonstrating that pre-transfer ECLS implantation enables immediate improvement of cardiorespiratory parameters, prevents delays in hemodynamic stabilization and increases transport safety. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En9\\\" href=\\\"#En9\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[9]</span></span></a>][<a class=\\\"EndnoteCallout\\\" fid=\\\"En10\\\" href=\\\"#En10\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[10]</span></span></a>][<a class=\\\"EndnoteCallout\\\" fid=\\\"En11\\\" href=\\\"#En11\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[11]</span></span></a>]</p>\\n<p data-paraid=\\\"p22\\\" id=\\\"p22\\\" class=\\\"ParaText\\\">The fact that our patientÃ¢ÂÂs neurological status was unclear and, in combination with his extremely unfavorable cardiac anatomy and high risk profile, required careful evaluation of surgical therapy options addressing the GLA, on the one hand, and candidacy for heart transplantation, on the other, illustrate the notion of ECLS as a bridge to decision. The ECLS thus served not only to achieve hemodynamic stability, but also to gain time to evaluate neurological recovery, investigate medical issues and therapy options, and obtain information on questions such as social support and patient consent to further therapies.</p>\\n<p style=\\\"margin:0cm\\\" data-paraid=\\\"p23\\\" id=\\\"p23\\\" class=\\\"Heading1\\\"><b>Conclusion</b></p>\\n<p data-paraid=\\\"p24\\\" id=\\\"p24\\\" class=\\\"ParaText\\\">In summary, the fast recovery our patient made on ECLS leads us to conclude that the threshold to rapid institution of mechanical circulatory support should be low in patients with acute, refractory heart failure including those with unusual and rare pathologies. <span style=\\\"color:red\\\">We conclude that ECLS weaning should be attempted and that surgical therapy options including HTX should be carefully evaluated. Sufficient anticoagulation is mandatory.</span> The fact that follow-up revealed subsequent death from thromboembolic complications highlights the danger of thromboembolism inevitably associated with GLA.</p>\\n<p style=\\\"margin:0cm\\\" data-paraid=\\\"p25\\\" id=\\\"p25\\\" class=\\\"Heading2\\\"><b>Disclosure Statements</b></p>\\n<p data-paraid=\\\"p26\\\" id=\\\"p26\\\" class=\\\"ParaText\\\">- The authors have received no funding for the preparation of this paper.</p>\\n<p data-paraid=\\\"p27\\\" id=\\\"p27\\\" class=\\\"ParaText\\\">- The authors have no conflicts and/or competing interests to declare.</p>\\n<p data-paraid=\\\"p28\\\" id=\\\"p28\\\" class=\\\"ParaText\\\">- Written informed consent was obtained from the patientÃ¢ÂÂs relatives for publication of this case report and accompanying images. A copy of the written consent is available for review by the Editor-in-Chief of this journal.</p></div>\\n\\n<div class=\\\"BackMatter\\\">\\n\\n<div class=\\\"Reference\\\">\\n<p data-paraid=\\\"p29\\\" id=\\\"1\\\"><b>References</b></p>\\n<p data-paraid=\\\"p30\\\" id=\\\"2\\\"><b>Figure legends</b></p>\\n<p data-paraid=\\\"p31\\\" id=\\\"3\\\"><span style=\\\"background:aqua\\\">Figure 1. Transversal section of giant left atrium on initial CT after cardiac arrest and cardiopulmonary resuscitation, Dimensions: <span style=\\\"color:red\\\">240</span> mm x 176 mm</span></p>\\n<p data-paraid=\\\"p32\\\" id=\\\"4\\\">Figure 2: Frontal section of giant left atrium on initial CT</p>\\n<p data-paraid=\\\"p33\\\" id=\\\"5\\\"><span style=\\\"background:aqua\\\">Figure 3: Transversal section of giant left atrium on initial CT after cardiac arrest and cardiopulmonary resuscitation, Dimensions: <span style=\\\"color:red\\\">220</span> mm x 176 mm</span></p>\\n<p data-paraid=\\\"p34\\\" id=\\\"6\\\"><span class=\\\"Ennid\\\" id=\\\"En1\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[1]</span>] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Apostolakis E, Shuhaiber JH. The surgical management of giant left atrium. Eur J Cardiothorac Surg 2008; 33:182-190.</p>\\n<p data-paraid=\\\"p35\\\" id=\\\"7\\\"><span class=\\\"Ennid\\\" id=\\\"En2\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[2]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kim H, Park YA, Choi SM, Chung H, Kim JY, Min PK, Yoon YW, Lee BK, Hong BK, Rim SeJ, Kwon HM, Choi EY. Associates and prognosis of giant left atrium; single center experience. J Cardiovasc Ultrasound 2017;25:84-90.</p>\\n<p data-paraid=\\\"p36\\\" id=\\\"8\\\"><span class=\\\"Ennid\\\" id=\\\"En3\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[3]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pan J, Li QG, Li J, Wang DJ. Partial cardiac autotransplantation with a concomitant mitral valve, aortic valve replacement and tricuspid plasty. Interact Cardiovasc Thorac Surg 2013;17:906-907.</p>\\n<p data-paraid=\\\"p37\\\" id=\\\"9\\\"><span class=\\\"Ennid\\\" id=\\\"En4\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[4]</span>] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lessana A, Scorsin M, ScheublÃÂ© C, Raffoul R, Rescigno G. <a href=\\\"https://www.ncbi.nlm.nih.gov/pubmed/10320275\\\">Effective reduction of a giant left atrium by partial autotransplantation.</a> Ann Thorac Surg 1999;67:1164-1165.</p>\\n<p data-paraid=\\\"p38\\\" id=\\\"10\\\"><span class=\\\"Ennid\\\" id=\\\"En5\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[5]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Beckmann A, Benk C, Beyersdorf F, Haimerl G, Merkle F, Mestres C, Pepper J. Wahba A. Position article for the use of extracorporeal life support in adult patients. Eur J Cardiothorac Surg 2011;40:676-681.</p>\\n<p data-paraid=\\\"p39\\\" id=\\\"11\\\"><span class=\\\"Ennid\\\" id=\\\"En6\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[6]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Guenther SPW, Buchholz S, Born F, Brunner S, Schramm R, Hoechter DJ, von Dossow V, Pichlmaier M, Hagl C, Khaladj N. Remote ECLS-implantation and transport for retrieval of cardiogenic shock patients. &nbsp;</p>\\n<p data-paraid=\\\"p40\\\" id=\\\"12\\\"><span class=\\\"Ennid\\\" id=\\\"En7\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[7]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berdowski J, Berg RA, Tijssen JGP, Koster RW. Global incidences of out-of-hospital cardiac arrest and survival rates: systematic review of 67 prospective studies. Resuscitation 2010;81:1479-1487.</p>\\n<p data-paraid=\\\"p41\\\" id=\\\"13\\\"><span class=\\\"Ennid\\\" id=\\\"En8\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[8]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chan PS, McNally B, Tang F, Kellermann A, CARES Surveillance Group. Recent trends in survival from out-of-hospital cardiac arrest in the United States. Circulation 2014;130:1876-1882.</p>\\n<p data-paraid=\\\"p42\\\" id=\\\"14\\\"><span class=\\\"Ennid\\\" id=\\\"En9\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[9]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Schopka S, Philipp A, Hilker M, MÃÂ¼ller T, Zimmermann M, Arlt M, Rupprecht L, Schmid C, Lunz D. Clinical course and long-term outcome following venoarterial extracorporeal life support-facilitated interhospital transfer of patients with circulatory failure. Resuscitation 2015;93:53-57.</p>\\n<p data-paraid=\\\"p43\\\" id=\\\"15\\\"><span class=\\\"Ennid\\\" id=\\\"En10\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[10]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Javidfar J, Brodie D, Takayama H, Mongero L, Zwischenberger J, Sonett J, Bacchetta M. Safe transport of critically ill adult patients on extracorporeal membrane oxygenation support to a regional extracorporeal membrane oxygenation center. ASAIO J 20122;57:421-425.</p>\\n<p data-paraid=\\\"p44\\\" id=\\\"16\\\"><span class=\\\"Ennid\\\" id=\\\"En11\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[11]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Formica F, Avalli L, Redaelli G, Paolini G. Interhospital stabilization of adult patients with refractory cardiogenic shock by veno-arterial extracorporeal membrane oxygenation. Int J Cardiol 2011;147:164-165.</p></div></div><script class=\\\"jsdom\\\" src=\\\"http://code.jquery.com/jquery.js\\\"></script><script class=\\\"jsdom\\\" src=\\\"http://code.jquery.com/jquery.js\\\"></script><script class=\\\"jsdom\\\" src=\\\"http://code.jquery.com/jquery.js\\\"></script></body></html>\n",
+									"type": "text"
+								},
+								{
+									"key": "projectName",
+									"value": "D2H_AQ_10",
+									"type": "text"
+								},
+								{
+									"key": "subProjectName",
+									"value": "PEERJK",
+									"type": "text"
+								},
+								{
+									"key": "workObjectID",
+									"value": "D2_NEW_FIL_23",
+									"type": "text"
+								},
+								{
+									"key": "fileName",
+									"value": "D2_NEW_FIL_23.html",
+									"type": "text"
+								},
+								{
+									"key": "fileType",
+									"value": "html",
+									"type": "text"
+								},
+								{
+									"key": "backupFlag",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "processName",
+									"value": "LatinTerms",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3200/saveWOFile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"saveWOFile"
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				},
+				{
+					"name": "saveWOFile (without Subproj)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fileContent",
+									"value": "<html><head> <meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html; charset=utf-8\\\"> <meta name=\\\"Generator\\\" content=\\\"Microsoft Word 15 (filtered)\\\"> <style>\\n@font-face <!-- {\\n  font-family: Wingdings;\\n  panose-1: 5 0 0 0 0 0 0 0 0 0;}\\n@font-face {\\n  font-family: \\\"Cambria Math\\\";\\n  panose-1: 2 4 5 3 5 4 6 3 2 4;}\\n@font-face {\\n  font-family: Calibri;\\n  panose-1: 2 15 5 2 2 2 4 3 2 4;}\\n@font-face {\\n  font-family: Cambria;\\n  panose-1: 2 4 5 3 5 4 6 3 2 4;}\\n@font-face {\\n  font-family: \\\"Arial Narrow\\\";\\n  panose-1: 2 11 6 6 2 2 2 3 2 4;}\\n@font-face {\\n  font-family: Tahoma;\\n  panose-1: 2 11 6 4 3 5 4 4 2 4;}\\n@font-face {\\n  font-family: AdvOTa88ee647;\\n  panose-1: 0 0 0 0 0 0 0 0 0 0;}\\n--> </style>  </head>  <body lang=\\\"EN-IN\\\">\\n\\n<div class=\\\"FrontMatter\\\">\\n<p data-paraid=\\\"p1\\\" id=\\\"p1\\\" class=\\\"Abstract\\\"><b>Abstract</b></p>\\n<p data-paraid=\\\"p2\\\" id=\\\"p2\\\" class=\\\"Abstract\\\">Background: Remote extracorporeal life support (ECLS) implantation and mobile ECLS are increasingly applied to enable treatment of patients with refractory heart failure at specialized care centers. Giant left atrium (GLA) is a rare cause but may lead to acute and devastating heart failure.</p>\\n<p data-paraid=\\\"p3\\\" id=\\\"p3\\\" class=\\\"Abstract\\\">Case report: Acute heart failure that gave rise to a prolonged period of out-of-hospital cardiopulmonary resuscitation (CPR) in a patient who underwent remote ECLS implantation was found to have resulted from a GLA of impressive dimensions. There being no reasonable option for immediate surgical therapy, the patient was successfully bridged to recovery with a view to subsequent heart transplantation.</p>\\n<p data-paraid=\\\"p4\\\" id=\\\"p4\\\" class=\\\"Abstract\\\">Conclusions: The threshold to rapid institution of ECLS should be low in patients with acute, refractory heart failure including those with uncommon pathologies. Remote ECLS implantation and interhospital transfer on mobile ECLS increase the chances of survival in cases requiring treatment by specialized care centers.</p>\\n<p data-paraid=\\\"p5\\\" id=\\\"p5\\\" class=\\\"Keywords\\\">Keywords: giant left atrium; heart failure; extracorporeal life support; remote ECLS implantation; mobile ECLS</p></div>\\n\\n<div class=\\\"BodyMatter\\\">\\n<p style=\\\"margin:0cm\\\" data-paraid=\\\"p6\\\" id=\\\"p6\\\" class=\\\"Heading1\\\"><b>Introduction</b></p>\\n<p data-paraid=\\\"p7\\\" id=\\\"p7\\\" class=\\\"ParaText\\\">Giant left atrium (GLA) is commonly defined as a left atrium with a diameterÃ¢ÂÂÃ¢ÂÂ¥Ã¢ÂÂ65&nbsp;mm and found most frequently as a result of mitral valve disease. The condition may be asymptomatic or manifest itself by different symptoms including atrial fibrillation, thrombus formation and heart failure. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En1\\\" href=\\\"#En1\\\"><span style=\\\"font-family:Calibri,sans-serif\\\">[1]</span></a>][<a class=\\\"EndnoteCallout\\\" fid=\\\"En2\\\" href=\\\"#En2\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[2]</span></span></a>]</p>\\n<p data-paraid=\\\"p8\\\" id=\\\"p8\\\" class=\\\"ParaText\\\">Surgical therapy aims at reducing the size of the GLA and relies on a variety of techniques for plicating or resecting parts of the left atrium. [1] Due to the difficulty of exposing a heart with a left atrium of excessive dimensions, surgical therapy of GLA was variously reported to have required (partial) autotransplantation. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En3\\\" href=\\\"#En3\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[3]</span></span></a>][<a class=\\\"EndnoteCallout\\\" fid=\\\"En4\\\" href=\\\"#En4\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[4]</span></span></a>]</p>\\n<p data-paraid=\\\"p9\\\" id=\\\"p9\\\" class=\\\"ParaText\\\">With regard to ECLS, there is wide agreement not only on its use in patients with severe heart failure refractory to conventional therapy, but also that it should be instituted before the onset of multi-organ failure. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En5\\\" href=\\\"#En5\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[5]</span></span></a>] In patients with acute refractory heart failure or after CPR in whom diagnosis and/or neurological status are not clear or the further course of therapy is yet to be determined, ECLS may serve as a bridge to decision. Over the past decade, remote ECLS implantation and inter-hospital transfer on mobile ECLS have come to play an increasing role. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En6\\\" href=\\\"#En6\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[6]</span></span></a>]</p>\\n<p style=\\\"margin-right:0cm; margin-left:1.0cm;text-indent:-1.0cm\\\" data-paraid=\\\"p10\\\" id=\\\"p10\\\" class=\\\"Heading1\\\"><b>Case report</b></p>\\n<p data-paraid=\\\"p11\\\" id=\\\"p11\\\" class=\\\"ParaText\\\">A 57-year old male with acute heart failure was admitted to a community hospital after ROSC following cardiac arrest and <span style=\\\"color:red\\\">approx. 65&nbsp;minutes</span> of out-of-hospital CPR. <span style=\\\"color:red\\\">While his cardiac rhythm at the time of ROSC was not documented, he was in atrial fibrillation upon arrival at the community hospital.</span> It turned out that he had undergone re-do mitral valve replacement with a mechanical valve and tricuspid valve repair five years preceding the event. Nearly two decades earlier, he had undergone mitral valve replacement for mitral regurgitation in the setting of cardiomegaly. Echocardiography and computed tomography (CT) showed a grotesque case of GLA (Fig. 1 and 2) that had gone undiagnosed because the patient had not presented for follow-up examinations after the most recent surgical procedure, <span style=\\\"color:red\\\">i.e. for 5&nbsp;years. Echocardiography findings included sludge in the GLA and a left ventricular ejection fraction of 10%. Fluoroscopy showed normal motion of the mitral valve leaflets.</span></p>\\n<p data-paraid=\\\"p12\\\" id=\\\"p12\\\" class=\\\"ParaText\\\">When the patient remained in severe cardiogenic shock, our mobile ECLS team was called for ECLS implantation and subsequent air transport to enable further treatment at our tertiary care center. <span style=\\\"color:red\\\">Inflow and outflow for the ECLS system (StÃÂ¶ckert Centrifugal Pump and Centrifugal Pump Console) were instituted by percutaneous placement of a 17&nbsp;Fr NovaPort cannula in the left femoral artery and a 21&nbsp;Fr Biomedicus cannula in the left femoral vein.</span></p>\\n<p data-paraid=\\\"p13\\\" id=\\\"p13\\\" class=\\\"ParaText\\\">Both ECLS implantation and interhospital transfer were implemented without complications. In the further course, preventing thromboembolic complications while at the same time controlling an increasingly dramatic hemorrhagic tendency turned out to be a challenge. Echocardiography showed spontaneous contrast/sludge in the left atrium (Fig. 3) even though the <span style=\\\"color:red\\\">patientÃ¢ÂÂs initial INR of 3.3</span> was accompanied by moderate thrombocytopenia and his PTT was 50.2&nbsp;seconds after receiving 2000 I.U. of unfractionated heparin for ECLS implantation. Over the following two days, <span style=\\\"color:red\\\">his INR climbed to 8.9</span> and extensive spontaneous oropharyngeal, pulmonary and gastrointestinal bleeding required transfusion of several units of packed red blood cells and moderate correction of his coagulation status.</p>\\n<p data-paraid=\\\"p14\\\" id=\\\"p14\\\" class=\\\"ParaText\\\"><span style=\\\"color:red\\\">Started at 2800&nbsp;RPM</span>, the ECLS system provided sufficient blood flow <span style=\\\"color:red\\\">(of approx. 4&nbsp;L)</span> to keep up adequate perfusion. Sedation was terminated, and the patient was weaned from catecholamines within 48&nbsp;hours while his renal and hepatic functions simultaneously recovered. He woke up and turned out to be responsive though slightly delirious.</p>\\n<p data-paraid=\\\"p15\\\" id=\\\"p15\\\" class=\\\"ParaText\\\">Surgical options were evaluated but appeared little promising due to the very size of the GLA and the patientÃ¢ÂÂs risk constellation. Therefore, it was resolved to wean him from ECLS and retransfer him to the community hospital for further recovery and subsequent evaluation for heart transplantation. <span style=\\\"color:red\\\">The</span> <span style=\\\"color:red\\\">ECLS system was kept at about</span> <span style=\\\"color:red\\\">2800&nbsp;rpm for about 24&nbsp;hours and at 1900Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ2200 for another period of about 24&nbsp;hours. Then the pump speed was reduced to 1500&nbsp;rpm (1.3&nbsp;L) before the ECLS system was finally removed a few hours later.</span></p>\\n<p data-paraid=\\\"p16\\\" id=\\\"p16\\\" class=\\\"ParaText\\\">&nbsp;Early mobilization was initiated and mechanical respiration was terminated as soon as oropharyngeal and pulmonary bleeding were under control. Intravenous heparin was continued to prevent thrombus formation within the GLA, and after a total ICU stay of 6&nbsp;days, the patient was retransferred and arrived in stable condition at the community hospital. <span style=\\\"color:red\\\">At the time of retransfer, he was on i.v. unfractionated heparin (PTT 59.9&nbsp;seconds) and had an INR of 1.7.</span></p>\\n<p data-paraid=\\\"p17\\\" id=\\\"p17\\\" class=\\\"ParaText\\\">Follow-up for the present case report revealed that he had taken a fatal course due to mesenteric ischemia suspected to have been caused by thromboembolism from the GLA within a few days from arriving at the community hospital.</p>\\n<p style=\\\"margin-right:0cm; margin-left:1.0cm;text-indent:-1.0cm\\\" data-paraid=\\\"p18\\\" id=\\\"p18\\\" class=\\\"Heading1\\\"><b>Discussion</b></p>\\n<p data-paraid=\\\"p19\\\" id=\\\"p19\\\" class=\\\"ParaText\\\">The relevance of heart failure in patients with GLA was demonstrated by Kim et al. [2] who followed a cohort of 163 patients up for a median of 22&nbsp;months. 18 (11%) were admitted to hospital due to heart failure, and the fact that nearly 30% of those hospitalized for heart failure in this series took a fatal course is in keeping with the devastating character of the condition we observed in our patient.</p>\\n<p data-paraid=\\\"p20\\\" id=\\\"p20\\\" class=\\\"ParaText\\\">Mortality is moreover known to be extremely high in patients who sustained out-of-hospital cardiac arrest. Survival-to-discharge following adult out-of-hospital cardiac arrest in Europe was found to be as low as 9% by a review of 67 prospective studies [<a class=\\\"EndnoteCallout\\\" fid=\\\"En7\\\" href=\\\"#En7\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[7]</span></span></a>], while register data from the US suggested survival of 8.3% for the year 2012 [<a class=\\\"EndnoteCallout\\\" fid=\\\"En8\\\" href=\\\"#En8\\\"><span style=\\\"font-family:Calibri,sans-serif\\\">[8]</span></a>]. Given the low probability of surviving out-of-hospital cardiac arrest and the severity of our patientÃ¢ÂÂs underlying pathology, we conclude that early institution of ECLS made a relevant contribution to his initial survival and recovery.</p>\\n<p data-paraid=\\\"p21\\\" id=\\\"p21\\\" class=\\\"ParaText\\\">Simultaneously, our case illustrates the advantages of remote ECLS implantation and interhospital transfer on mobile ECLS. The benefits of pre-transfer institution of and transport on ECLS we saw in our patient are in keeping with an increasing number of reports on interhospital transfer on ECLS suggesting favorable results and demonstrating that pre-transfer ECLS implantation enables immediate improvement of cardiorespiratory parameters, prevents delays in hemodynamic stabilization and increases transport safety. [<a class=\\\"EndnoteCallout\\\" fid=\\\"En9\\\" href=\\\"#En9\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[9]</span></span></a>][<a class=\\\"EndnoteCallout\\\" fid=\\\"En10\\\" href=\\\"#En10\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[10]</span></span></a>][<a class=\\\"EndnoteCallout\\\" fid=\\\"En11\\\" href=\\\"#En11\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\"><span style=\\\"font-family: 'Calibri',sans-serif\\\">[11]</span></span></a>]</p>\\n<p data-paraid=\\\"p22\\\" id=\\\"p22\\\" class=\\\"ParaText\\\">The fact that our patientÃ¢ÂÂs neurological status was unclear and, in combination with his extremely unfavorable cardiac anatomy and high risk profile, required careful evaluation of surgical therapy options addressing the GLA, on the one hand, and candidacy for heart transplantation, on the other, illustrate the notion of ECLS as a bridge to decision. The ECLS thus served not only to achieve hemodynamic stability, but also to gain time to evaluate neurological recovery, investigate medical issues and therapy options, and obtain information on questions such as social support and patient consent to further therapies.</p>\\n<p style=\\\"margin:0cm\\\" data-paraid=\\\"p23\\\" id=\\\"p23\\\" class=\\\"Heading1\\\"><b>Conclusion</b></p>\\n<p data-paraid=\\\"p24\\\" id=\\\"p24\\\" class=\\\"ParaText\\\">In summary, the fast recovery our patient made on ECLS leads us to conclude that the threshold to rapid institution of mechanical circulatory support should be low in patients with acute, refractory heart failure including those with unusual and rare pathologies. <span style=\\\"color:red\\\">We conclude that ECLS weaning should be attempted and that surgical therapy options including HTX should be carefully evaluated. Sufficient anticoagulation is mandatory.</span> The fact that follow-up revealed subsequent death from thromboembolic complications highlights the danger of thromboembolism inevitably associated with GLA.</p>\\n<p style=\\\"margin:0cm\\\" data-paraid=\\\"p25\\\" id=\\\"p25\\\" class=\\\"Heading2\\\"><b>Disclosure Statements</b></p>\\n<p data-paraid=\\\"p26\\\" id=\\\"p26\\\" class=\\\"ParaText\\\">- The authors have received no funding for the preparation of this paper.</p>\\n<p data-paraid=\\\"p27\\\" id=\\\"p27\\\" class=\\\"ParaText\\\">- The authors have no conflicts and/or competing interests to declare.</p>\\n<p data-paraid=\\\"p28\\\" id=\\\"p28\\\" class=\\\"ParaText\\\">- Written informed consent was obtained from the patientÃ¢ÂÂs relatives for publication of this case report and accompanying images. A copy of the written consent is available for review by the Editor-in-Chief of this journal.</p></div>\\n\\n<div class=\\\"BackMatter\\\">\\n\\n<div class=\\\"Reference\\\">\\n<p data-paraid=\\\"p29\\\" id=\\\"1\\\"><b>References</b></p>\\n<p data-paraid=\\\"p30\\\" id=\\\"2\\\"><b>Figure legends</b></p>\\n<p data-paraid=\\\"p31\\\" id=\\\"3\\\"><span style=\\\"background:aqua\\\">Figure 1. Transversal section of giant left atrium on initial CT after cardiac arrest and cardiopulmonary resuscitation, Dimensions: <span style=\\\"color:red\\\">240</span> mm x 176 mm</span></p>\\n<p data-paraid=\\\"p32\\\" id=\\\"4\\\">Figure 2: Frontal section of giant left atrium on initial CT</p>\\n<p data-paraid=\\\"p33\\\" id=\\\"5\\\"><span style=\\\"background:aqua\\\">Figure 3: Transversal section of giant left atrium on initial CT after cardiac arrest and cardiopulmonary resuscitation, Dimensions: <span style=\\\"color:red\\\">220</span> mm x 176 mm</span></p>\\n<p data-paraid=\\\"p34\\\" id=\\\"6\\\"><span class=\\\"Ennid\\\" id=\\\"En1\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[1]</span>] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Apostolakis E, Shuhaiber JH. The surgical management of giant left atrium. Eur J Cardiothorac Surg 2008; 33:182-190.</p>\\n<p data-paraid=\\\"p35\\\" id=\\\"7\\\"><span class=\\\"Ennid\\\" id=\\\"En2\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[2]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kim H, Park YA, Choi SM, Chung H, Kim JY, Min PK, Yoon YW, Lee BK, Hong BK, Rim SeJ, Kwon HM, Choi EY. Associates and prognosis of giant left atrium; single center experience. J Cardiovasc Ultrasound 2017;25:84-90.</p>\\n<p data-paraid=\\\"p36\\\" id=\\\"8\\\"><span class=\\\"Ennid\\\" id=\\\"En3\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[3]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pan J, Li QG, Li J, Wang DJ. Partial cardiac autotransplantation with a concomitant mitral valve, aortic valve replacement and tricuspid plasty. Interact Cardiovasc Thorac Surg 2013;17:906-907.</p>\\n<p data-paraid=\\\"p37\\\" id=\\\"9\\\"><span class=\\\"Ennid\\\" id=\\\"En4\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[4]</span>] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lessana A, Scorsin M, ScheublÃÂ© C, Raffoul R, Rescigno G. <a href=\\\"https://www.ncbi.nlm.nih.gov/pubmed/10320275\\\">Effective reduction of a giant left atrium by partial autotransplantation.</a> Ann Thorac Surg 1999;67:1164-1165.</p>\\n<p data-paraid=\\\"p38\\\" id=\\\"10\\\"><span class=\\\"Ennid\\\" id=\\\"En5\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[5]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Beckmann A, Benk C, Beyersdorf F, Haimerl G, Merkle F, Mestres C, Pepper J. Wahba A. Position article for the use of extracorporeal life support in adult patients. Eur J Cardiothorac Surg 2011;40:676-681.</p>\\n<p data-paraid=\\\"p39\\\" id=\\\"11\\\"><span class=\\\"Ennid\\\" id=\\\"En6\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[6]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Guenther SPW, Buchholz S, Born F, Brunner S, Schramm R, Hoechter DJ, von Dossow V, Pichlmaier M, Hagl C, Khaladj N. Remote ECLS-implantation and transport for retrieval of cardiogenic shock patients. &nbsp;</p>\\n<p data-paraid=\\\"p40\\\" id=\\\"12\\\"><span class=\\\"Ennid\\\" id=\\\"En7\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[7]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berdowski J, Berg RA, Tijssen JGP, Koster RW. Global incidences of out-of-hospital cardiac arrest and survival rates: systematic review of 67 prospective studies. Resuscitation 2010;81:1479-1487.</p>\\n<p data-paraid=\\\"p41\\\" id=\\\"13\\\"><span class=\\\"Ennid\\\" id=\\\"En8\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[8]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chan PS, McNally B, Tang F, Kellermann A, CARES Surveillance Group. Recent trends in survival from out-of-hospital cardiac arrest in the United States. Circulation 2014;130:1876-1882.</p>\\n<p data-paraid=\\\"p42\\\" id=\\\"14\\\"><span class=\\\"Ennid\\\" id=\\\"En9\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[9]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Schopka S, Philipp A, Hilker M, MÃÂ¼ller T, Zimmermann M, Arlt M, Rupprecht L, Schmid C, Lunz D. Clinical course and long-term outcome following venoarterial extracorporeal life support-facilitated interhospital transfer of patients with circulatory failure. Resuscitation 2015;93:53-57.</p>\\n<p data-paraid=\\\"p43\\\" id=\\\"15\\\"><span class=\\\"Ennid\\\" id=\\\"En10\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[10]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Javidfar J, Brodie D, Takayama H, Mongero L, Zwischenberger J, Sonett J, Bacchetta M. Safe transport of critically ill adult patients on extracorporeal membrane oxygenation support to a regional extracorporeal membrane oxygenation center. ASAIO J 20122;57:421-425.</p>\\n<p data-paraid=\\\"p44\\\" id=\\\"16\\\"><span class=\\\"Ennid\\\" id=\\\"En11\\\"></span>[<span style=\\\"font-family:Calibri,sans-serif\\\">[11]</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Formica F, Avalli L, Redaelli G, Paolini G. Interhospital stabilization of adult patients with refractory cardiogenic shock by veno-arterial extracorporeal membrane oxygenation. Int J Cardiol 2011;147:164-165.</p></div></div><script class=\\\"jsdom\\\" src=\\\"http://code.jquery.com/jquery.js\\\"></script><script class=\\\"jsdom\\\" src=\\\"http://code.jquery.com/jquery.js\\\"></script><script class=\\\"jsdom\\\" src=\\\"http://code.jquery.com/jquery.js\\\"></script></body></html>\n",
+									"type": "text"
+								},
+								{
+									"key": "projectName",
+									"value": "D2H_AQ_12",
+									"type": "text"
+								},
+								{
+									"key": "subProjectName",
+									"value": "PEERJK",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "workObjectID",
+									"value": "D2_NEW_FIL",
+									"type": "text"
+								},
+								{
+									"key": "fileName",
+									"value": "D2_NEW_FIL.html",
+									"type": "text"
+								},
+								{
+									"key": "fileType",
+									"value": "html",
+									"type": "text"
+								},
+								{
+									"key": "backupFlag",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "processName",
+									"value": "Binomial",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3200/saveWOFile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"saveWOFile"
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				},
+				{
+					"name": "getWOFile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "projectName",
+									"value": "D2H_AQ_2",
+									"type": "text"
+								},
+								{
+									"key": "subProjectName",
+									"value": "PEERJ",
+									"type": "text"
+								},
+								{
+									"key": "workObjectID",
+									"value": "D2_NEW_FIL_23",
+									"type": "text"
+								},
+								{
+									"key": "fileName",
+									"value": "D2_NEW_FIL_23.html",
+									"type": "text"
+								},
+								{
+									"key": "fileType",
+									"value": "html",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3200/getWOFile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"getWOFile"
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				},
+				{
+					"name": "getWOFile (withoutSubProj)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "projectName",
+									"value": "D2H_AQ_12",
+									"type": "text"
+								},
+								{
+									"key": "subProjectName",
+									"value": "PEERJ",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "workObjectID",
+									"value": "D2_NEW_FIL",
+									"type": "text"
+								},
+								{
+									"key": "fileName",
+									"value": "D2_NEW_FIL.html",
+									"type": "text"
+								},
+								{
+									"key": "fileType",
+									"value": "support",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3200/getWOFile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"getWOFile"
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				},
+				{
+					"name": "saveWOConfigFile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fileContent",
+									"value": "{\n    \"quiz\": {\n        \"sport\": {\n            \"q1\": {\n                \"question\": \"Which one is correct team name in NBA?\",\n                \"options\": [\n                    \"New York Bulls\",\n                    \"Los Angeles Kings\",\n                    \"Golden State Warriros\",\n                    \"Huston Rocket\"\n                ],\n                \"answer\": \"Huston Rocket\"\n            }\n        },\n        \"maths\": {\n            \"q1\": {\n                \"question\": \"5 + 7 = ?\",\n                \"options\": [\n                    \"10\",\n                    \"11\",\n                    \"12\",\n                    \"13\"\n                ],\n                \"answer\": \"12\"\n            },\n            \"q2\": {\n                \"question\": \"12 - 8 = ?\",\n                \"options\": [\n                    \"1\",\n                    \"2\",\n                    \"3\",\n                    \"4\"\n                ],\n                \"answer\": \"4\"\n            }\n        }\n    }\n}",
+									"type": "text"
+								},
+								{
+									"key": "configID",
+									"value": "32_D2CONFIG",
+									"type": "text"
+								},
+								{
+									"key": "processName",
+									"value": "D2HRR",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3200/saveWOConfigFile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"saveWOConfigFile"
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				},
+				{
+					"name": "getWOConfigFile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "configID",
+									"value": "32_D2CONFIG",
+									"type": "text"
+								},
+								{
+									"key": "processName",
+									"value": "D2HRR",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3200/getWOConfigFile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"getWOConfigFile"
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteWOConfigFile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "configID",
+									"value": "32_D2CONFIG",
+									"type": "text"
+								},
+								{
+									"key": "processName",
+									"value": "D2HRR",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3200/deleteWOConfigFile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"deleteWOConfigFile"
+							]
+						},
+						"description": "Base File Server call"
+					},
+					"response": []
+				}
+			],
+			"description": "This is complete request / response of COBE FileServer which includes HTML File, Config File, and other file get / send information.",
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

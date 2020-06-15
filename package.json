@@ -1,0 +1,28 @@
+{
+  "name": "cobe-file-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fileServer.js",
+  "dependencies": {
+    "better-queue": "^3.8.10",
+    "body-parser": "^1.15.2",
+    "buffer": "^5.5.0",
+    "cluster": "^0.7.7",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "docxtemplater": "^3.17.5",
+    "express": "^4.14.0",
+    "mammoth": "^1.4.9",
+    "multer": "^1.2.0",
+    "n-readlines": "^1.0.0",
+    "nan": "^2.14.0",
+    "pizzip": "^3.0.6",
+    "queue": "^6.0.1",
+    "shelljs": "^0.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "azzok",
+  "license": "ISC"
+}
